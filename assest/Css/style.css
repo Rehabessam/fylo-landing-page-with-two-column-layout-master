@@ -23,7 +23,7 @@ body{
     color: var(--Very-Dark-Blue);
     height: 100vh;
 }
-h6,a,h1{
+h2,a,h1{
     font-family: var(--font-family-one);
     font-weight: 700;
 }
@@ -89,6 +89,10 @@ a{
 }
 .avatar-text{
     margin-left: 1rem;
+}
+.avatar-text h2{
+    font-size: 13px;
+    font-weight: bold;
 }
 .avatar-text p{
     font-size: 0.8rem;
