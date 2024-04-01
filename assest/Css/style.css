@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+:root
+{
+              /* Primary */ 
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+            /* Accent */
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+            /* Neutral */
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+*{
+    box-sizing: border-box;
+    --font-family-one: 'Raleway', sans-serif;
+    --font-family-two: 'Open Sans', sans-serif;
+}
+body{
+    font-family: var(--font-family-two);
+    font-weight: 400;
+    color: var(--Very-Dark-Blue);
+}
+h6,a,h1{
+    font-family: var(--font-family-one);
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight:400;
+    font-family: var(--font-family-two);
+    color: var(--Very-Dark-Blue);
+}
+.navbar-nav{
+    flex-direction: row;
+}
+.fylo-logo{
+    width: 74%;
+    margin-left: 1rem;
+}
+.fylo-content h1{
+  font-size: 2.1rem;
+  line-height: 1.4;
+  font-weight: bolder;
+  font-family: var(--font-family-two);
+}
+.p-content{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.fylo-main{
+    background-image: url("../images/bg-curve-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.fylo-main h1{
+    font-size: 1.4rem;
+}
+.fylo-main p{
+    color: var(--Desaturated-Blue) ;
+}
+.fylo-works a{
+   text-decoration: none;
+   color: var(--Moderate-Cyan);
+   font-size: 1rem;
+   font-family: var(--font-family-two);
+}
+.fylo-works div{
+    margin-top: 0.25rem;
+    border-bottom: 0.4px solid var(--Moderate-Cyan);
+}
+.card{
+    padding: 1rem;
+}
+.card-title{
+    width: 4%;
+}
+.card-text{
+    color: var(--Very-Dark-Blue);
+    font-size: 15px;
+    line-height: 1.8;
+}
+.card-imgage{
+    max-height: 45px;
+}
+.avatar-text{
+    margin-left: 1rem;
+}
+.avatar-text p{
+    font-size: 0.8rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+.fylo-bottom{
+    background-color: var(--Desaturated-Blue);
+}
+
+.fylo-bottom h2{
+    font-family: var(--font-family-one);
+    font-weight: 700;
+}
+footer{
+    background-color: var(--Very-Dark-Blue);
+}
+.social a{
+   border: 1px solid white;
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;
+   padding: 1rem;
+   position: relative;
+   color: white;
+   margin-bottom: 2rem;
+}
+.social-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fylo-footer-logo{
+    color: white;
+    filter: invert(100%) saturate(0%) brightness(1000%);
+    width: 40%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.list-unstyled li{
+    padding: 0.5rem 0;
+}
+.list-unstyled a{
+    font-size: 1rem ;
+}
+.list-unstyled a:hover,
+.social a:hover, 
+.social a:hover i {
+    color: hsl(224, 93%, 58%) !important;
+    border-color: hsl(224, 93%, 58%) ;
+}
+.attribution { font-size: 11px; text-align: center; color: white; margin-top: 15px;}
+.attribution a { color: hsl(228, 45%, 44%); font-size: 11px;}
+/* @media (min-width:375px)
+{
+ a{
+    font-size: 0.5rem;
+    font-weight: 400;
+ }
+ .fylo-logo{
+    width: 50%;
+    margin-left: 0.9rem;
+}
+.p-content{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.social-icon{
+    font-size: 1rem;
+}
+
+} */
+@media (min-width:768px)
+{
+    a{
+        font-size: 1.5rem;
+        font-weight: 400;
+     }
+     .fylo-logo{
+        width: 74%;
+        margin-left: 0.9rem;
+    }
+    .content-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 4rem;
+    }
+    .p-content{
+        padding-left: 0;
+        padding-bottom: 1.5rem;
+    }
+    .fylo-main h1{
+        font-size: 1.5rem;
+    }
+    .card{
+        width: 70%;
+    }
+    .btn
+    {
+        padding: 0.04rem 4rem;
+    }
+    .btn-bottom{
+        width: 35%;
+        padding: 0.7rem 0.7rem;
+        margin-top: 0.5rem;
+    }
+    .fylo-footer-logo{
+        width: 10%;
+        height: 10%;
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+    }
+    .social-icon{
+        font-size: 1rem;
+    }
+}
